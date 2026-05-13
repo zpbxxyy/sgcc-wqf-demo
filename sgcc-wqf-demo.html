@@ -131,7 +131,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft
 .guide-next-btn:hover { background: var(--green-dark); }
 
 /* ===== Phone Frame ===== */
-.phone-frame { width: 375px; height: 780px; margin: 12px auto; background: #f5f5f5; border-radius: 40px; border: 8px solid #1a1a1a; overflow: hidden; position: relative; }
+.phone-frame { width: 375px; height: 700px; margin: 12px auto; background: #f5f5f5; border-radius: 40px; border: 8px solid #1a1a1a; overflow: hidden; position: relative; }
 .phone-status-bar { height: 44px; display: flex; align-items: center; padding: 0 24px; justify-content: space-between; }
 .phone-status-bar .time { font-size: 14px; font-weight: 600; color: #fff; }
 .phone-status-bar .icons { display: flex; gap: 6px; align-items: center; font-size: 12px; color: #fff; }
@@ -186,9 +186,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft
 /* ===== 微企付收银台 (Screen 5) ===== */
 .wqf-cashier { background: #f5f5f5; height: 100%; }
 .wqf-cashier-header { background: #fff; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--gray-200); }
-.wqf-cashier-body { padding: 24px 20px; }
-.wqf-cashier-merchant { text-align: center; font-size: 14px; color: var(--gray-700); margin-bottom: 8px; }
-.wqf-cashier-amount { text-align: center; font-size: 36px; font-weight: 700; color: var(--gray-900); margin-bottom: 24px; }
+.wqf-cashier-body { padding: 16px 20px; }
+.wqf-cashier-merchant { text-align: center; font-size: 14px; color: var(--gray-700); margin-bottom: 4px; }
+.wqf-cashier-amount { text-align: center; font-size: 32px; font-weight: 700; color: var(--gray-900); margin-bottom: 16px; }
 .wqf-cashier-amount .yen { font-size: 20px; }
 .wqf-payer-row { background: #fff; border-radius: 10px; padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
 .wqf-payer-row .label { font-size: 14px; color: var(--gray-500); }
@@ -206,28 +206,28 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft
 .wqf-bank-check.selected { background: var(--green); border-color: var(--green); }
 .wqf-bank-check.selected::after { content: ''; width: 8px; height: 5px; border-left: 2px solid #fff; border-bottom: 2px solid #fff; transform: rotate(-45deg) translateY(-1px); }
 .wqf-more-bank { text-align: center; padding: 12px; font-size: 13px; color: var(--brand); }
-.wqf-pay-btn { display: block; width: 80%; margin: 40px auto 0; background: var(--green); color: #fff; border: none; padding: 14px; border-radius: 8px; font-size: 16px; cursor: pointer; }
+.wqf-pay-btn { display: block; width: 80%; margin: 20px auto 0; background: var(--green); color: #fff; border: none; padding: 14px; border-radius: 8px; font-size: 16px; cursor: pointer; }
 .wqf-pay-btn:hover { background: var(--green-dark); }
 
 /* ===== 银行APP转账 (Screen 6) ===== */
 .bank-app { background: #f5f5f5; height: 100%; }
 .bank-app-header { background: #fff; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--gray-200); }
-.bank-app-body { padding: 24px 20px; }
-.bank-transfer-card { background: #fff; border-radius: 12px; padding: 24px 20px; margin-bottom: 16px; }
-.bank-transfer-title { text-align: center; font-size: 14px; color: var(--gray-700); margin-bottom: 8px; }
-.bank-transfer-amount { text-align: center; font-size: 36px; font-weight: 700; color: var(--gray-900); margin-bottom: 24px; }
+.bank-app-body { padding: 16px 20px; }
+.bank-transfer-card { background: #fff; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; }
+.bank-transfer-title { text-align: center; font-size: 14px; color: var(--gray-700); margin-bottom: 4px; }
+.bank-transfer-amount { text-align: center; font-size: 32px; font-weight: 700; color: var(--gray-900); margin-bottom: 16px; }
 .bank-transfer-amount .yen { font-size: 20px; }
-.bank-info-row { display: flex; padding: 14px 0; border-bottom: 1px solid var(--gray-200); }
+.bank-info-row { display: flex; padding: 10px 0; border-bottom: 1px solid var(--gray-200); }
 .bank-info-row:last-child { border-bottom: none; }
 .bank-info-row .label { width: 80px; font-size: 14px; color: var(--gray-500); flex-shrink: 0; }
 .bank-info-row .value { font-size: 14px; color: var(--gray-900); flex: 1; text-align: right; }
-.bank-payer-card { background: #fff; border-radius: 12px; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.bank-payer-card { background: #fff; border-radius: 12px; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
 .bank-payer-card .left { font-size: 14px; color: var(--gray-500); }
 .bank-payer-card .right { font-size: 14px; color: var(--gray-900); }
 .bank-payer-card .right .sub { font-size: 12px; color: var(--gray-500); margin-top: 2px; }
 .bank-realtime { font-size: 13px; color: var(--gray-500); padding: 8px 0; }
 .bank-realtime span { color: var(--red); }
-.bank-next-btn { display: block; width: 90%; margin: 40px auto 0; background: #e74c3c; color: #fff; border: none; padding: 14px; border-radius: 24px; font-size: 16px; cursor: pointer; }
+.bank-next-btn { display: block; width: 90%; margin: 20px auto 0; background: #e74c3c; color: #fff; border: none; padding: 14px; border-radius: 24px; font-size: 16px; cursor: pointer; }
 
 /* ===== Pay Success & PC Sync ===== */
 .pay-success { text-align: center; padding: 48px 24px; }
@@ -251,6 +251,26 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft
 
 @keyframes slideIn { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 .animate-in { animation: slideIn 0.4s ease; }
+
+/* Click indicator */
+.click-hint { position: relative; }
+.click-hint::after {
+  content: '👆 点击这里'; position: absolute; top: -32px; left: 50%; transform: translateX(-50%);
+  background: rgba(231,76,60,0.9); color: #fff; font-size: 11px; padding: 4px 10px;
+  border-radius: 12px; white-space: nowrap; z-index: 10;
+  animation: hintPulse 2s ease-in-out infinite;
+}
+.click-hint-right::after { left: auto; right: -8px; transform: none; }
+.click-hint-bottom::after { top: auto; bottom: -32px; }
+@keyframes hintPulse { 0%,100% { opacity: 1; transform: translateX(-50%) scale(1); } 50% { opacity: 0.7; transform: translateX(-50%) scale(1.05); } }
+.click-hint-right::after { animation: hintPulseR 2s ease-in-out infinite; }
+@keyframes hintPulseR { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.7; transform: scale(1.05); } }
+
+.click-ring { 
+  box-shadow: 0 0 0 3px rgba(231,76,60,0.4); border-radius: 8px;
+  animation: ringPulse 1.5s ease-in-out infinite;
+}
+@keyframes ringPulse { 0%,100% { box-shadow: 0 0 0 3px rgba(231,76,60,0.4); } 50% { box-shadow: 0 0 0 6px rgba(231,76,60,0.2); } }
 </style>
 </head>
 <body>
@@ -390,7 +410,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft
         <div class="location">庆阳 ▾</div><div class="search-bar">🔍 搜索功能服务</div>
         <div class="header-icons">
           <div class="header-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="rgba(255,255,255,0.3)"/></svg></div>
-          <div class="header-icon" onclick="goToScreen(4)" style="cursor:pointer;"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H5.17L4 17.17V4z" fill="#fff" opacity="0.9"/></svg><div class="msg-badge">11</div></div>
+          <div class="header-icon click-hint click-hint-right" onclick="goToScreen(4)" style="cursor:pointer;"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H5.17L4 17.17V4z" fill="#fff" opacity="0.9"/></svg><div class="msg-badge">11</div></div>
         </div>
       </div>
       <div class="app-quick-actions">
@@ -424,10 +444,10 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft
         <div class="msg-header"><span class="back" onclick="goToScreen(3)">‹</span><span class="title">消息</span><span class="action">全部已读</span></div>
         <div class="msg-tabs"><div class="msg-tab active">通知公告 <span class="tab-badge">3</span></div><div class="msg-tab">活动推荐 <span class="tab-badge">8</span></div></div>
         <div class="msg-list">
-          <div class="msg-item new" onclick="goToScreen(5)">
+          <div class="msg-item new click-ring" onclick="goToScreen(5)">
             <div class="msg-item-header"><div class="msg-item-icon" style="background:var(--green-light);">💳</div><span class="msg-item-title">交易提醒</span><span class="msg-item-time">刚刚</span></div>
             <div class="msg-item-body">订单编号：4202602031234919458O1<br>订单金额：<span class="highlight">100元</span><br>实付金额：<span class="highlight">100元</span><br>支付方式：<span class="highlight">微企付支付</span><br>交费共计：共1户</div>
-            <div class="msg-item-footer"><button class="msg-item-btn">立即支付 →</button></div>
+            <div class="msg-item-footer"><button class="msg-item-btn click-ring">立即支付 →</button></div>
           </div>
           <div class="msg-item">
             <div class="msg-item-header"><div class="msg-item-icon" style="background:#fff3e0;">🔔</div><span class="msg-item-title">余额预警提醒</span><span class="msg-item-time">02.08</span></div>
@@ -462,7 +482,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft
             </ul>
             <div class="wqf-more-bank">显示更多银行</div>
           </div>
-          <button class="wqf-pay-btn" onclick="goToScreen(6)">付款</button>
+          <button class="wqf-pay-btn click-hint click-ring" onclick="goToScreen(6)">付款</button>
         </div>
       </div>
     </div>
@@ -492,7 +512,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft
             <span class="right">招商银行(0517) ›<div class="sub">可用余额 ¥25,132.64 ⓘ</div></span>
           </div>
           <div class="bank-realtime"><span>实时</span>到账</div>
-          <button class="bank-next-btn" onclick="goToScreen(7)">下一步</button>
+          <button class="bank-next-btn click-hint click-ring" onclick="goToScreen(7)">下一步</button>
         </div>
       </div>
     </div>
